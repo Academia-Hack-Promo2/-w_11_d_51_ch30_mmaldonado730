@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jquery-1</title>
+    <meta charset="UFT-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css" >
+</head>
+
+
+  <body>
+        <div id="lcolor" style="min-height: 50px; background-color: #333; color: #FFF"></div>
+        <input id="inicial" type="text">
+
+
+
+
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/clase1.js" ></script>
+  <script type="text/javascript">
+
+            $(function(){
+                var lcolor = $("#lcolor");
+                var inicial = $("#inicial");
+                lcolor.mouseover(function(){
+                    lcolor.text(inicial.val());
+                })
+            });
+  </script>
+    </body>
+</html>
+	
+
+
